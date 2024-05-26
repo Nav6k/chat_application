@@ -8,9 +8,10 @@ import "./App.css";
 const App = () => {
   if (!localStorage.getItem("username")) return <LoginForm />;
   return (
-    <ChatEngine 
+    <ChatEngine
       height="100vh"
-      projectID="3aa020e9-a2ec-4c0b-a7ef-84987531e395"
+      projectID="
+      24bbacd2-c419-4f4f-8076-56b4ab2b3d91"
       userName={localStorage.getItem("username")}
       userSecret={localStorage.getItem("password")}
       renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
